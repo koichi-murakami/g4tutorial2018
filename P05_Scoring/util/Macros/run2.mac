@@ -1,0 +1,20 @@
+#run2.mac
+# 
+#/vis/disable
+/gun/particle mu-
+/gun/energy 100 MeV
+/gun/position 0. 0. -5. cm
+/gun/direction 0. 0. 1.
+#copynumbers
+/analysis/h1/set 0 50 151 200 none
+/analysis/h1/set 1 10 36 45 none
+#energy loss
+/analysis/h1/set 2 200 0. 0.4 MeV
+#world x vs y
+/analysis/h2/setX 0 40 -0.2 0.2 mm
+/analysis/h2/setY 0 40 -0.2 0.2 mm
+/tracking/verbose 0
+/run/beamOn 100
+
+#to run ROOT, type-in %root PlotPicel2.CC
+#if hist parameters are OK, /run/beamOn 1000 or more and run ROOT

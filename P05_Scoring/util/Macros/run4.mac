@@ -1,0 +1,16 @@
+#run4.mac
+# 2D Plot: Pixel cell no. (copyNo, motherCopyNo)
+#/vis/disable
+/gun/particle e-
+/gun/energy 100 MeV
+/gun/position 0. 0. -5. cm
+/gun/direction 0. 0. 1.
+/analysis/h1/set 0 50 151 200 none
+/analysis/h1/set 1 10 36 45 none
+/analysis/h1/set 2 200 0. 0.4 MeV
+/analysis/h2/setX 0 50 151 200 none
+/analysis/h2/setY 0 10 36 45 none
+
+/tracking/verbose 0
+/run/beamOn 1000
+

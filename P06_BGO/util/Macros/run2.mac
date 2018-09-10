@@ -1,0 +1,12 @@
+#run 100 events 
+#/tracking/verbose 1
+/tracking/verbose 0
+#and vis is disabled
+/vis/disable
+/gun/particle e-
+/gun/energy 100 MeV
+/gun/direction 0 0 1
+/run/beamOn 100
+#after the run, exit the Application and
+#root DepthBGO.CC
+#if your PC is capable, /run/beamOn more than 100 events and see plots

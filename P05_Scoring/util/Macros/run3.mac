@@ -1,0 +1,18 @@
+#run3.mac
+#oblique entrance
+/gun/particle mu-
+/gun/energy 1 GeV
+
+/gun/position 0. 20. -5. cm
+/gun/direction 0. -20. 5.
+
+/analysis/h1/set 0 200 100 300
+/analysis/h1/set 1 20 30 50
+/analysis/h1/set 2 100 0. 0.3 MeV
+/analysis/h2/setX 0 200 -1. 1. mm
+/analysis/h2/setY 0 200 -1. 1. mm
+/tracking/verbose 0
+/run/beamOn 100
+/vis/disable
+/run/beamOn 1000
+
